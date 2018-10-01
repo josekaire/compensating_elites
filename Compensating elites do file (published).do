@@ -39,7 +39,7 @@ xtreg s_v2 c.s_elc##c.qregime c.s_ai $controls , mle
 		margins, dydx(s_elc) at(qregime=(.2 (.1) 1 )) 
 		marginsplot, name(gm4, replace) ytitle("Effect of economic liberalization on CSO limitaitons")  $format1 
 
-*Produce Figure 3 of the manuscript 
+*Produce Figure 2 of the manuscript 
 graph combine gm2 gm4, graphregion(color(white)) xsize(6) name(combined, replace) 
 
 *				*					*
@@ -99,7 +99,7 @@ coefplot o3 o4, $format2 name(highd, replace)  title(High international costs of
 graph combine lowd highd, name(csor, replace) ycommon graphregion(color(white)) xsize(6)
 
 
-*Create Figure 4 of manusciprt
+*Create Figure 3 of manusciprt
 graph combine hrs csor, graphregion(color(white)) xsize(6) c(1)
 
 *Create text file with Table 2 at the specifided location 
